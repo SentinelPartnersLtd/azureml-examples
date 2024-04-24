@@ -19,10 +19,10 @@ set -o nounset
 ###################
 # OPTIONAL ENVIRONMENT VARIABLES:
 #
-# RESOURCE_GROUP_NAME
-# WORKSPACE_NAME
-# SUBSCRIPTION_ID
-# CPU_COMPUTE_NAME
+export RESOURCE_GROUP_NAME='rg-MLOps-DevTest'
+export WORKSPACE_NAME='mlw-devtest'
+export SUBSCRIPTION_ID='108b85e7-b4a0-44aa-b5f5-898e4ef68ffc'
+export CPU_COMPUTE_NAME='cpu-cluster'
 # GPU_COMPUTE_NAME
 
 ###############
