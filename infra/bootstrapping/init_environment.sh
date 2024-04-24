@@ -48,9 +48,9 @@ let "REGISTRY_TODAY=10#$(date +'%m%d')"
 let "REGISTRY_TOMORROW=10#$(date -d '+1 days' +'%m%d')"
 
 
-export LOCATION="East US"
-export PREFIX=aml
-export SUFFIX=sdkv202
+export LOCATION="uksouth"
+export PREFIX="rg-"
+export SUFFIX="MLOps-DevTest"
 export APP_NAME="github-sp-amlsdkv2-gh-2"
 export timestamp=$(date +%s)
 export RESOURCE_GROUP_NAME='rg-MLOps-DevTest'
@@ -71,13 +71,13 @@ fi
 WORKSPACE_NAME=${WORKSPACE_NAME:-}
 if [[ -z "$WORKSPACE_NAME" ]]
 then
-    export WORKSPACE_NAME="${PREFIX}${SUFFIX}${DATE_ONLY}-ws"
+    export WORKSPACE_NAME="mlw-devtest"
     echo_warning "No workspace name [WORKSPACE_NAME] specified, defaulting to ${WORKSPACE_NAME}."
 fi
 
 if [[ -z "$LOCATION" ]]
 then
-    export LOCATION="eastus"
+    export LOCATION="uksouth"
     echo_warning "No resource group location [LOCATION] specified, defaulting to ${LOCATION}."
 fi
 

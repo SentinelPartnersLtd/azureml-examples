@@ -56,6 +56,16 @@ export timestamp=$(date +%s)
 # export WORKSPACE_NAME=${PREFIX}${SUFFIX}${DATE_ONLY}-ws
 # export SUBSCRIPTION_ID=test
 # export AZURE_SERVICE_PRINCIPAL="github-sp-${PREFIX}${SUFFIX}"
+export LOCATION="uksouth"
+export PREFIX="rg-"
+export SUFFIX="MLOps-DevTest"
+export APP_NAME="github-sp-amlsdkv2-gh-2"
+export timestamp=$(date +%s)
+export RESOURCE_GROUP_NAME='rg-MLOps-DevTest'
+# export WORKSPACE_NAME=${PREFIX}${SUFFIX}${DATE_ONLY}-ws
+export WORKSPACE_NAME='mlw-devtest'
+export SUBSCRIPTION_ID='108b85e7-b4a0-44aa-b5f5-898e4ef68ffc'
+export AZURE_SERVICE_PRINCIPAL="github-aml-sp"
 
 # check if the required variables are specified.
 
